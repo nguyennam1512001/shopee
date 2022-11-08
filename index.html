@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopee</title>
+    <link rel="stylesheet" href="./https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> <!--reset html-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- font html-->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha512-qWVvreMuH9i0DrugcOtifxdtZVBBL0X75r9YweXsdCHtXUidlctw7NXg5KVP3ITPtqZ2S575A0wFkvgS2anqSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                            Vào cửa hàng trên ứng dụng F8-Shop
+
+                            <!-- QR Code  -->
+                            <div class="header__qr">
+                                <img src="./assets/img/QR_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/img/GooglePlay.png" alt="GooglePlay" class="header__qr-download-img">
+                                    </a>
+                                    <a href="#" class="header__qr-link">
+                                        <img src="./assets/img/Appstore.png" alt="Appstore" class="header__qr-download-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <span class="header__navbar-title--no-icon">Kết nối</span>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+
+                            <!-- notify  -->
+                            <div class="header__notify">
+                                <h3 class="header__notify-heading">
+                                    Thông báo mới nhận
+                                </h3>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item ">
+                                        <a href="#" class="header__notify-item-link">
+                                        <img src="https://zsuntz.github.io/assets/img/notify1.png" alt="" class="header__notify-item-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-info-name">Mặt nạ thải độc</span>
+                                            <span class="header__notify-info-descrip">Khuyễn mãi siêu hot</span>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="#" class="header__notify-item-link">
+                                        <img src="https://zsuntz.github.io/assets/img/notify1.png" alt="" class="header__notify-item-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-info-name">Mặt nạ thải độc</span>
+                                            <span class="header__notify-info-descrip">Khuyễn mãi siêu hot</span>
+                                        </div>
+                                        </a>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <a href="#" class="header__notify-item-link">
+                                        <img src="https://zsuntz.github.io/assets/img/notify1.png" alt="" class="header__notify-item-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-info-name">Mặt nạ thải độc</span>
+                                            <span class="header__notify-info-descrip">Khuyễn mãi siêu hot</span>
+                                        </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                Trợ giúp
+                            </a> 
+                        </li>
+                        <!-- <li class="header__navbar-item header__navbar-item--weight header__navbar-item--separate">Đăng kí</li>
+                        <li class="header__navbar-item header__navbar-item--weight">Đăng nhập</li> -->
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-user"></i>
+                                nguyenvannam
+                            </a> 
+                            <ul class="header__navbar-user-list">
+                                <li class="header__navbar-user-item">
+                                    <a href="#" class="header__navbar-user-link">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="#" class="header__navbar-user-link">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="#" class="header__navbar-user-link">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item ">
+                                    <a href="#" class="header__navbar-user-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- header search  -->
+            <div class="grid wide">
+                <div class="header__with-search">
+                    <div class="label-checkbox" style="display: flex;">
+                        <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                            <i class="ti-menu"></i>
+
+                        </label>
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="ti-search" style="color: white;"></i>
+                        </label>
+                    </div>
+
+                    <input type="checkbox" id="mobile-menu-checkbox" hidden class="header__menu-checkbox">
+                    
+                    <div class="mobile-navbar">
+                        <ul class="mobile-navbar-list">
+                            <li class="mobile-navbar-item">
+                                <a href="#" class="mobile-navbar-link">User</a>
+                            </li>
+                            <li class="mobile-navbar-item">
+                                <a href="#" class="mobile-navbar-link">User</a>
+                            </li>
+                            <li class="mobile-navbar-item">
+                                <a href="#" class="mobile-navbar-link">User</a>
+                            </li>
+                            <li class="mobile-navbar-item">
+                                <a href="#" class="mobile-navbar-link">User</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+                    <div class="header-logo hide-on-tablet">
+                        <a href="#" class="header-logo__link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/2560px-Shopee.svg.png" alt="" class="header-logo__img">
+                        </a>
+                    </div>
+                    <div class="header-search__wrap ">
+                        <div class="header-search__input-wrap">
+                            <input type="text" class="header-search__input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            
+                            <!-- search history  -->
+                            <div class="header-search__input-history">
+                                <div class="header-search__history-heading">Lịch sử tìm kiếm</div>
+                                <ul class="header-search__history-list">
+                                    <li class="header-search__history-item">
+                                        <a href="#" class="header-search__history-link">kem duong da</a>
+                                    </li>
+                                    <li class="header-search__history-item">
+                                        <a href="#" class="header-search__history-link">kem duong da</a>
+                                    </li>
+                                    <li class="header-search__history-item">
+                                        <a href="#" class="header-search__history-link">kem duong da</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-search__select">
+                            Trong shop
+                            <i class="header-search__select-icon fa-solid fa-chevron-down"></i>
+                            <!-- ----- -->
+                            <div class="header-search__select-list-wrap">
+                                <ul class="header-search__select-list">
+                                    <li class="header-search__select-item">
+                                        <a href="#" class="header-search__select-link">
+                                            Trong shop
+                                            <i class="header-search__select-link-icon fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                    <li class="header-search__select-item">
+                                        <a href="#" class="header-search__select-link">
+                                            Ngoai shop
+                                            <i class="header-search__select-link-icon fa-solid fa-check"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header-search__btn btn btn--primary">
+                            <i class="header-search__btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="header-cart">
+                        <i class="header-cart__icon fa-solid fa-cart-shopping"></i>
+                        <div class="header-cart__quantity">3</div>
+
+                        <!-- cart list  -->
+                        <div class="header-cart__product">
+                            <div class="header-cart__heading">Sản phẩm đã thêm</div>
+                            <ul class="header-cart__list">
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="header-cart__item">
+                                    <a href="#" class="header-cart__link">
+                                        <div class="header-cart__link">
+                                            <img src="https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png" alt="" class="header-cart__img">
+                                            <div class="header-cart__info">
+                                                <div class="header-cart__info-heading">
+                                                    <div class="header-cart__info-name">Bộ cấp nước Bộ cấp nước Bộ c header-cart__link header-cart__link header-cart__link</div>
+                                                    <div class="header-cart__price-item">
+                                                        <span class="header-cart__price">450.000.000đ</span>
+                                                        <span>x</span>
+                                                        <span class="header-cart__price-quantity">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header-cart__info-footer">
+                                                    <span class="header-cart__info-discrip">Phân loại: Bạc</span>
+                                                    <div class="header-cart__price-delete">Xoá</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>   
+                            <div class="header-cart__view-cart">
+                                <button class="header__view-cart-btn btn btn--primary">Xem giỏ hàng</button>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__sort-bar">
+                <ul class="header__sort-bar-list">
+                    <li class="header__sort-bar-item">
+                        <a href="#" class="header__sort-bar-link">Lien quan</a>
+                    </li>
+                    <li class="header__sort-bar-item">
+                        <a href="#" class="header__sort-bar-link">Moi nhat</a>
+                    </li>
+                    <li class="header__sort-bar-item">
+                        <a href="#" class="header__sort-bar-link">Ban chay</a>
+                    </li>
+                    <li class="header__sort-bar-item">
+                        <a href="#" class="header__sort-bar-link">gia</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col p-2 t-0 m-0">
+                        <div class="category">
+                            <h3 class="category-heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Trang điểm mặt</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Trang điểm mặt</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col p-10 t-12 m-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="btn home-filter-btn">Phổ biến</button>
+                            <button class="btn home-filter-btn btn--primary">Mới nhất</button>
+                            <button class="btn home-filter-btn">Bán chạy</button>
+                            <div class="home-filter__select">
+                                Giá
+                                <i class="home-filter__select-icon fa-solid fa-chevron-down"></i>
+                                <!-- select-list  -->
+                                <ul class="home-filter__select-list">
+                                    <li class="home-filter__select-item">
+                                        <a href="#" class="home-filter__select-link">
+                                            Cao tới thấp
+                                        </a>
+                                    </li>
+                                    <li class="home-filter__select-item">
+                                        <a href="#" class="home-filter__select-link">
+                                            Thấp tới cao
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-number">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-link home-filter__page-link--current">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-link">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- container product -->
+                        <div class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link"> dung cu thiet bi tien ich</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-product">
+                            <div class="row sm-gutter">
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col p-2-4 t-3 m-6">
+                                    <a href="#" class="home-product__item">
+                                        <div class="home-product__item-img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1600498324-myphamohui-lgvina.png);"></div>
+                                        <div class="home-product__item-container">
+                                            <h4 class="home-product__item-name">Son Whoo Luxury Lip Rouge mini Son Whoo Luxury Lip Rouge mini</h4>
+                                            <div class="home-product__item-price">
+                                                <span class="home-product__item-price-old">550.000đ</span>
+                                                <span class="home-product__item-price-curent">400.000đ</span>
+                                            </div>
+                                            <div class="home-product__item-action">
+                                                <span class="home-product__item-like home-product__item-like--liked">
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-empty fa-regular fa-heart"></i>
+                                                    <i class="home-product__item-like-icon home-product__item-like-icon-fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home-product__item-rating">
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon home-product__item-rating-icon--gold fa-solid fa-star"></i>
+                                                    <i class="home-product__item-rating-icon fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="home-product__item-origin">
+                                                <span class="home-product__item-brand">Whoo</span>
+                                                <span class="home-product__item-origin-name">Hàn Quốc</span>
+                                            </div>
+                                            <div class="home-product__item-favourite">
+                                                <i class="home-product__item-favourite-icon fa-solid fa-check"></i>
+                                                <span>Yêu thích</span> 
+                                            </div>
+                                            <div class="home-product__item-sale-off">
+                                                <span class="home-product__item-sale-off-percent">10%</span>
+                                                <span class="home-product__item-sale-off-lanel">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- pagination  -->
+                        <ul class="pagination-list">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link pagination-link--curent">1</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">2</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">3</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">4</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">5</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">...</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">14</a>
+                            </li><li class="pagination-item">
+                                <a href="#" class="pagination-link">
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer  -->
+        <footer class="footer">
+            <div class="grid wide" style="padding: 20px;">
+                <div class="row">
+                    <div class="col p-2-4 t-4 m-6">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">F8-Shop Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-2-4 t-4 m-6">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-2-4 t-4 m-6">
+                        <h3 class="footer-heading">Theo dõi chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer__icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer__icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">
+                                    <i class="footer__icon fa-brands fa-linkedin"></i>
+                                    Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-2-4 t-4 m-6">
+                        <h3 class="footer-heading">Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trang điểm mặt</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trang điểm môi</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="footer-link">Trang điểm mắt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col p-2-4 t-4 m-12">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer__list-container">
+                            <img src="https://zsuntz.github.io/assets/img/QR_code.png" alt="QR code" class="footer__qr-code">
+                            <div class="footer__download-apps">
+                                <a href="#" class="footer__download-apps-link">
+                                    <img src="https://zsuntz.github.io/assets/img/GooglePlay.png" alt="GooglePlay" class="footer__download-apps-img">
+                                </a>
+                                <a href="#" class="footer__download-apps-link">
+                                    <img src="https://zsuntz.github.io/assets/img/Appstore.png" alt="Appstore" class="footer__download-apps-img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="footer__copy-right">
+                    © 2020 Bản quyền thuộc về cá nhân Trương Đức Vinh - Website được tạo ra vì mục đích học tập, không vì mục đích thương mại
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- modal  -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body"> -->
+            <!-- register form  -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng kí</h3>
+                        <span class="auth-form__swich-btn">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu ">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">Bằng việc đăng kí, bạn đã đồng ý với Shopee về 
+                            <a href="#" class="auth-form__policy-link">Điều khoản dịch vụ</a> & 
+                            <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+                    <div class="auth-form__control">
+                        <button class="btn btn--nomal auth-form__control-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">Đăng kí</button>
+                    </div>
+                </div>
+                <div class="auth-form__social">
+                    <a href="#" class="btn btn--size-s auth-form__social--facebook auth-form__social-link">
+                        <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                        <span class="auth-form__social-title">
+                            Kết nối với facebook
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn--size-s auth-form__social-link">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-title">
+                            Kết nối với google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- login form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__swich-btn">Đăng kí</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="email" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu ">
+                        </div>
+                        
+                    </div>
+                    <div class="auth-form__aside-login">
+                        <a href="#" class="auth-form__aside-login-link auth-form__aside-forgot">Quên mật khẩu</a>
+                        <a href="#" class="auth-form__aside-login-link auth-form__aside-help">Cần trợ giúp?</a>
+                    </div>
+                    <div class="auth-form__control">
+                        <button class="btn btn--nomal auth-form__control-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="auth-form__social">
+                    <a href="#" class="btn btn--size-s auth-form__social--facebook auth-form__social-link">
+                        <i class="auth-form__social-icon fa-brands fa-facebook"></i>
+                        <span class="auth-form__social-title">
+                            Đăng nhập với facebook
+                        </span>
+                    </a>
+                    <a href="#" class="btn btn--size-s auth-form__social-link">
+                        <i class="auth-form__social-icon fa-brands fa-google"></i>
+                        <span class="auth-form__social-title">
+                            Đăng nhập với google
+                        </span>
+                    </a>
+                </div>
+            </div>  
+        </div>
+    </div> -->
+    
+</body>
+</html>
